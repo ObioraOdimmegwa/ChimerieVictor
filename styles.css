@@ -422,7 +422,7 @@ body{
      }
 
      .linksDiv .textDiv a{
-         font-size: 9px;
+         font-size: 10px;
      }
 
      .linksDiv .textDiv strong{
@@ -543,11 +543,11 @@ body{
     }
 
     .aaView{
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .aaViewP{
-        font-size: 11px;
+        font-size: 12px;
     }
 
 } 
