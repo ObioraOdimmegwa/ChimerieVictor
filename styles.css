@@ -9,6 +9,15 @@ body{
     background-color: white;
 }
 
+.libSingle{
+    display: flex;
+    align-items: center;
+}
+
+.libSingle a{
+    margin-left: 8px;
+}
+
 .topLineDiv{
     width: 100%;
     display: flex;
@@ -39,6 +48,10 @@ body{
     display: flex;
     align-items: center;
     padding: 10px 30px 10px 30px;
+}
+
+.booksDivMobile{
+    display: none;
 }
 
 .logoDiv{
@@ -273,11 +286,14 @@ body{
         padding: 10px 10px 10px 10px;
         background-color: #e6e7fb;
         color: red;
+        font-size: 8px;
+        position: fixed;
+
     }
     
     .topLineDivM p{
         max-lines: 1;
-        font-size: 12px;
+        font-size: 8px;
         animation: rightToLeft 25s linear infinite;
     }
 
@@ -285,11 +301,17 @@ body{
         width: 100%;
         display: flex;
         align-items: center;
-        padding: 5px 10px 5px 10px;
+        padding: 30px 10px 5px 10px;
+           
     }
 
-    .quoteDiv p{
-        font-size: 12px;
+    .logoDiv img{
+        width: 40%;
+        height: 40%;
+    }
+
+    .quoteDiv strong{
+        font-size: 8px;
     }
 
     .heroDiv{
@@ -300,13 +322,18 @@ body{
         background-color: #283291;
     }
 
-    .heroDiv .textDiv h1{
+    .heroDiv .textDiv .hh1{
         font-size: 30px;
         padding-top: 10px;
     }
+
+    .heroDiv .textDiv .hh2{
+        font-size: 30px;
+        margin-top: -6px;
+    }
     
     .heroDiv .textDiv h4{
-        font-size: 20px;
+        font-size: 24px;
         font-style: italic;
         padding-bottom: 10px;
     }
@@ -318,6 +345,8 @@ body{
         background-size: cover;
         background-position: center;
     }
+
+    
 
     .martinDiv{
         width: 100%;
@@ -345,11 +374,17 @@ body{
     }
     
     .bodyDiv .imageDiv{
+        display: none;
+    }
+
+    .booksDivMobile{
         width: 100%;
-        height: 350px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url("./images/emerie2.png");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #dee0f2;
+        margin-top: 4px;
+        
     }
     
     .booksDiv{
@@ -358,6 +393,7 @@ body{
         align-items: center;
         justify-content: center;
         background-color: #dee0f2;
+        display: none;
         
     }
     
@@ -365,7 +401,6 @@ body{
         width: 100%;
         background-color: #dee0f2;
         margin: auto;
-        margin-left: -30px;
         padding: 40px 20px 40px 20px;
     
     }
@@ -385,12 +420,20 @@ body{
         font-size: 12px;
      }
 
+     .linksDiv .textDiv a{
+         font-size: 14px;
+     }
+
+     .linksDiv .textDiv strong{
+        font-size: 15px;
+    }
+
      .provenLeadershipDiv{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 20px 20px 20px 20px;
+        padding: 0px 20px 20px 20px;
     }
     
     .provenLeadershipDiv .textDiv{
@@ -407,11 +450,22 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
         margin-left: auto;
+        display: none;
+    }
+
+    .imgDivMobile{
+        width: 100%;
+        height: 300px;
+        margin-top: 10px;
+        background-image: url("./images/emerieFlyer.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .visionDiv{
         width: 100%;
-        margin-top: 20px;
+        margin-top: -20px;
         background-color: #dee0f2;
         padding: 20px 40px 40px 40px;
     }
@@ -427,17 +481,19 @@ body{
     
         width: 300px;
         height: 200px;
-        margin: 30px 30px 30px 30px;
-        max-width: 200px;
+        margin: 10px;
+        max-width: 80px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        flex: 1 1 100px;
+        flex: 1 1 80px;
     }
 
+    
+
     .whatDiv{
-        margin-top: 20px;
+        margin-top: -20px;
         width: 100%;
         background-color: #283291;
         padding: 40px 20px 40px 20px;
@@ -455,7 +511,6 @@ body{
     .contactDiv{
         width: 100%;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -470,12 +525,12 @@ body{
     }
 
     .contactDiv .single p{
-        font-size: 12px;
+        font-size: 7px;
     }
     
     .contactDiv .single .image{
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
         margin-right: 10px;
         background-size: contain;
         background-position: center;
